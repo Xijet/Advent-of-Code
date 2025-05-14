@@ -12,7 +12,7 @@ for (let i = 0; i < reports.length; i++) {
 let increasing = true;
 let decreasing = true;
   for (let j = 1; j < reports[i].length; j++) {
-    let diff = reports[i][j] - reports[i][j - 1];
+    let diff = reports[i][j] - reports[i][j - 1]; // Create a variable that contains
     console.log("reports[" + i + "][" + j + "] = " + reports[i][j]);
 
     if (diff >= 1 && diff <= 3) {
@@ -22,6 +22,7 @@ let decreasing = true;
       // Checks if the row is decreasing within permitted range
       increasing = false;
     } else {
+      // Checks if the row is not following the rules of increase or decrease of 1-3
       increasing = false;
       decreasing = false;
     }
